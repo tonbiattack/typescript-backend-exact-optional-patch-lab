@@ -1,0 +1,17 @@
+{
+  "name": "typescript-backend-exact-optional-patch-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A reproducible backend TypeScript lab about exact optional properties in PATCH DTOs",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "repro": "vitest run test/profile-patch.test.ts -t \"does not call an omitted field clear\""
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "typescript": "5.7.2",
+    "vitest": "2.1.8"
+  }
+}
